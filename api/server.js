@@ -1,7 +1,7 @@
 // server configs
 const express = require("express");
 const config = require("./config/index");
-const morgan = require("morgan");
+// const morgan = require("morgan");
 var cors = require("cors");
 const mongooseLoader = require("./db");
 
@@ -14,7 +14,7 @@ const app = express();
 const port = config.port || 3001;
 
 // log of requests
-app.use(morgan("tiny"));
+// app.use(morgan("tiny"));
 app.use(cors());
 // parsers
 app.use(express.json());
