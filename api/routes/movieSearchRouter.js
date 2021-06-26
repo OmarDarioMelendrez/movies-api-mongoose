@@ -4,13 +4,11 @@ const {
 	getMovieById,
 	getMovieByTitle,
 } = require("../controllers/moviesControllers");
-// const { auth } = require("../controllers/authControllers");
+const { auth } = require("../controllers/authControllers");
 
 // get single movie by id
-// router.get("/id/:id", auth,getMovieById);
-router.get("/id/:id", getMovieById);
+router.get("/id/:id", auth,getMovieById);
 // get movies by title
-// router.get("/:movie", auth,getMovieByTitle);
-router.get("/:movie", getMovieByTitle);
+router.get("/:movie", auth,getMovieByTitle);
 
 module.exports = router;
