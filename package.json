@@ -4,6 +4,7 @@
   "description": "web to create users, search and add movies to favorites",
   "main": "/api/server.js",
   "scripts": {
+    "start": "node ./api/server.js",
     "dev": "nodemon ./api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
